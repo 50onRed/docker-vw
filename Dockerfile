@@ -26,4 +26,6 @@ RUN cp /usr/local/lib/libvw* /usr/lib && cp /usr/local/lib/liballreduce* /usr/li
 
 EXPOSE 26542
 
-CMD ["/usr/local/bin/vw"]
+ENTRYPOINT ["/usr/local/bin/vw"]
+
+CMD ["--help"]
